@@ -22,3 +22,4 @@ async def lifespan(app: FastAPI):
 
 app = FastAPI(title="Document Access Grants Service", lifespan=lifespan)
 app.include_router(grants_router)
+
